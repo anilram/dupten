@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"      
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="3dp"
+   	>
+   <LinearLayout 
+       	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:gravity="center_vertical"
+    	android:paddingTop="4dp"
+    	android:paddingLeft="4dp"
+    	android:paddingRight="4dp"
+    	android:paddingBottom="8dp"
+    	>
+    <LinearLayout    	   
+    	    android:layout_width="70dp"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:gravity="center"    		
+    		>
+
+    	 <LinearLayout    	   
+    	    android:layout_width="60dp"
+    		android:layout_height="60dp"
+    		android:orientation="vertical"
+    		android:background="@drawable/circle_border"
+    		android:gravity="center"		
+    		>
+           <TextView
+               android:layout_height="wrap_content"
+    		   android:layout_width="match_parent"
+    		   android:id="@+id/home_month"
+    		   android:text = "Month"
+    		   android:textSize="18sp"
+    		   android:fontFamily="sans-serif-light"
+    		   android:gravity = "center"
+    		   android:textColor="#296AF7"/>
+          <TextView
+               android:layout_height="wrap_content"
+    		   android:layout_width="match_parent"
+    		   android:id="@+id/home_dayRange"
+    		   android:text = "23-23"    		  
+    		   android:fontFamily="sans-serif-light"    		   
+    		   android:gravity = "center"/>
+          </LinearLayout>
+          </LinearLayout>
+          <LinearLayout
+               android:layout_width="wrap_content"
+    		   android:layout_height="wrap_content"
+    		   android:orientation="vertical"    		  
+    		   android:gravity="center_horizontal"
+    		   android:paddingLeft="5dp"
+    		  >
+           <TextView
+    		   android:layout_height="wrap_content"
+    		   android:layout_width="match_parent"
+    		   android:id="@+id/home_short_desc"
+    		   android:lines="2"
+    		   android:text = "Shorthort Desc"
+    		   android:textSize="16sp"
+    		   android:fontFamily="sans-serif-light"
+    		   android:gravity = "center_vertical|left"
+    		  />
+           <LinearLayout 
+               android:layout_height="wrap_content"
+    		   android:layout_width="match_parent"
+    		   android:orientation="horizontal"
+    		   android:layout_gravity="bottom">
+    		   <ImageView 
+    		       android:layout_height="16dp"
+    		   	   android:layout_width="10dp"
+    		   	   android:src="@drawable/location_pin"
+    		   	   android:layout_gravity="center"/>
+    		   <TextView
+	    		   android:layout_height="wrap_content"
+	    		   android:layout_width="match_parent"
+	    		   android:id="@+id/home_loc"
+	    		   android:text = " Location"
+	    		   android:fontFamily="sans-serif-light"
+	    		   android:textColor="#AAAAAA"
+	    		  />
+    		   </LinearLayout>
+           
+           </LinearLayout>
+       	
+      
+   </LinearLayout>
+	<View	    android:paddingTop="2dp"
+    			android:layout_width="fill_parent"
+    			android:layout_height="2dp"
+    			android:layout_marginLeft="1dp"
+    			android:layout_marginRight="2dp"
+    			android:background="#DEDEDE" 
+    			android:layout_alignParentBottom="true" 			
+    		/>
+</RelativeLayout>

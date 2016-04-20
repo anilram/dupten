@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/t_thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp" />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/t_bar"
+        android:padding="30dp"
+        android:indeterminateDrawable="@drawable/wheel"
+         />
+
+    <TextView
+        android:id="@+id/t_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/t_thumbnail"
+        android:layout_toRightOf="@id/t_thumbnail"
+        android:text="Poultry India Poultry India Poultry India"
+        android:textColor="@color/blue"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/t_location_image"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/t_title"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@id/t_thumbnail"
+        android:src="@drawable/ic_drawer" />
+
+    <TextView
+        android:id="@+id/t_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t_title"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@id/t_thumbnail"
+        android:text="Hyderabad, India"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/t_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t_location"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/t_thumbnail"
+        android:text="25-27 NOV 2015"
+        android:textColor="#888888"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/t_attending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="  Attending" />
+
+    <TextView
+        android:id="@+id/t_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/t_attending"
+        android:text=""
+        android:textColor="@color/red" />
+
+</RelativeLayout>

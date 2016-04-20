@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    tools:context="com.qison.dupten.UserProfileActivity" >
+    <RelativeLayout
+        android:id = "@+id/up_edit"
+        android:layout_width="match_parent"
+   		android:layout_height="match_parent"
+   		android:visibility="gone" >
+     <TextView
+    	android:id="@+id/up_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Submit"
+        android:background="@drawable/blue_box"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:textColor="#FFFFFF"               	
+         />
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/up_submit">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name*"/>
+    <EditText
+        android:id="@+id/up_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:background="@drawable/greyborderbox"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email*"/>
+    <EditText
+        android:id="@+id/up_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:background="@drawable/greyborderbox"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company*"/>
+    <EditText
+        android:id="@+id/up_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:background="@drawable/greyborderbox"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp" />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designation*"
+        />
+    <EditText
+        android:id="@+id/up_designation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:background="@drawable/greyborderbox"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country*"/>
+    <EditText
+        android:id="@+id/up_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:background="@drawable/greyborderbox"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp" />
+	<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City*"/>
+    <EditText
+        android:id="@+id/up_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:background="@drawable/greyborderbox"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile*"/>
+    <EditText
+        android:id="@+id/up_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:background="@drawable/greyborderbox"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp" />
+    </LinearLayout>
+ </ScrollView>
+ </RelativeLayout>
+ <LinearLayout android:layout_width="match_parent"
+        	   android:layout_height="wrap_content"
+        	   android:visibility="visible"
+        	   android:id = "@+id/up_profile"
+        	   android:orientation="vertical"
+        	   android:background="#EEEEEE"      	         	   
+        	   >
+<LinearLayout 
+    		  android:layout_width="match_parent"
+        	  android:layout_height="wrap_content"
+        	  android:background="@color/red" 
+        	  android:orientation="vertical"  >
+	<TextView android:layout_width="match_parent"
+        	  android:layout_height="wrap_content"        	  
+        	  android:id = "@+id/up_user_name"
+        	  android:text="User name"
+        	  android:gravity="center_horizontal"
+        	  android:padding = "10dp"
+        	  android:textColor="#FFFFFF"
+        	  android:textSize="20dp"/>
+     <ImageView 
+         		android:id = "@+id/up_pic"
+         		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:src="@drawable/ic_launcher"
+        		android:gravity="center_horizontal"
+        		android:contentDescription="srddf"
+        		android:textColor="#FFFFFF"
+        		/>
+     <TextView android:layout_width="match_parent"
+        	   android:layout_height="wrap_content"
+        	   android:id = "@+id/up_user_designation"
+        	   android:gravity="center_horizontal"
+        	   android:padding = "5dp"
+        	   android:textColor="#FFFFFF"
+        	   android:textSize="18dp"
+        	   />
+    
+     <TextView android:layout_width="match_parent"
+        	   android:layout_height="wrap_content"
+        	   android:id = "@+id/up_user_company"
+        	   android:padding = "5dp"
+        	   android:textColor="#FFFFFF"
+        	   android:gravity="center_horizontal"
+        	   android:textSize="16dp"/>
+      <TextView android:layout_width="match_parent"
+        	   android:layout_height="wrap_content"
+        	   android:id = "@+id/up_user_location"
+        	   android:gravity="center_horizontal"
+        	   android:padding = "5dp"
+        	   android:textColor="#FFFFFF"
+        	   android:textSize="14dp"/>
+     
+    </LinearLayout>
+     <TextView android:layout_width="match_parent"
+        	   android:layout_height="wrap_content"
+        	   android:id = "@+id/up_myEvents"        	   
+        	   android:background="@drawable/box_no_borders"
+        	   android:text="My Events"
+        	   android:layout_marginTop="2px"
+        	   android:padding = "10dp"
+        	   android:textSize="18dp"/>
+     
+     <TextView android:layout_width="match_parent"
+        	   android:layout_height="wrap_content"
+        	   android:id = "@+id/up_myConnections"
+        	   android:background="@drawable/box_no_borders"
+        	   android:text="My Connections"
+        	   android:layout_marginTop="4px"
+        	   android:padding = "10dp"
+        	   android:textSize="18dp"/>
+
+ </LinearLayout>
+</RelativeLayout>

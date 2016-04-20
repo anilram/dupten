@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0" >
+    <TextView
+    	android:id="@+id/ed_attend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Attend"
+        android:background="@drawable/blue_box"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:textColor="#FFFFFF"       	
+         />
+    <ScrollView 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_above="@id/ed_attend" 
+    >
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+    	android:orientation="vertical" >
+	<LinearLayout
+	    android:id="@+id/ed_header"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_marginTop="10dp"
+    	android:background="@drawable/list_row_bg"    	
+    	android:padding="10dp">
+    <LinearLayout        	  
+    	    android:layout_width="60dp"
+    		android:layout_height="60dp"
+    		android:orientation="vertical"
+    		android:background="@drawable/circle_border"
+    		android:gravity="center">
+           <TextView
+               android:layout_height="wrap_content"
+    		   android:layout_width="match_parent"
+    		   android:id="@+id/home_month"
+    		   android:text = "Month"
+    		   android:gravity = "center"
+    		   android:textColor="#0000FF"/>
+          <TextView
+               android:layout_height="wrap_content"
+    		   android:layout_width="match_parent"
+    		   android:id="@+id/home_dayRange"
+    		   android:text = "23-23"
+    		   android:gravity = "center"/>
+  </LinearLayout>
+  <TextView 
+      android:layout_marginLeft="10dp"    
+      android:layout_width="240dp"
+      android:layout_height="wrap_content"      
+      android:layout_gravity="center"
+      android:text="dcwsij fhcw ehfy erfewr fgbcwe y8g9f w87g78i"
+      android:paddingLeft="10dp" />  
+  <ImageView 
+      android:layout_width="10dp"
+      android:layout_height="10dp"
+      android:layout_gravity="center"
+      android:src="@drawable/green_arrow"/>
+  </LinearLayout>
+  <LinearLayout
+		android:id="@+id/ed_mapview"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:layout_marginTop="10dp"
+    	android:background="@drawable/list_row_bg"    	
+    	android:padding="10dp">
+  <TextView 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="dchdsfbcfyoewgci" />
+  <TextView 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="dchdsfbcfyoewgci" />
+  <FrameLayout android:layout_width="match_parent"
+          android:layout_height="160dp"
+          android:id="@+id/frameMap"
+          android:padding="10dp">
+       <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="160dp"
+          android:name="com.google.android.gms.maps.MapFragment"/>
+  </FrameLayout>
+ 
+  <TextView
+      	android:id="@+id/ed_getdirection"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="Get Direction"
+    	android:textColor="@color/blue" />
+  </LinearLayout>
+<LinearLayout    	
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:gravity="center_horizontal">
+    <LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="10dp"
+    	android:gravity="center_horizontal">
+        <ImageView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/ic_launcher"/>
+        <TextView 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Remainder"
+    		android:textSize="12dp" />
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="10dp"
+    	android:gravity="center_horizontal">
+        <ImageView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/ic_launcher"/>
+        <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Invite"
+    		android:textSize="12dp" />
+    </LinearLayout>
+     <LinearLayout 
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="10dp">
+        <ImageView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/ic_launcher"/>
+        <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Visitor"
+    		android:textSize="12dp" />
+    </LinearLayout>   
+</LinearLayout>
+<LinearLayout
+    	android:background="@drawable/box"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="10dp"
+    	android:layout_marginBottom="10dp"
+    	>
+     <TextView 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Description"    		
+    		android:textColor="@color/blue"
+    		android:paddingBottom="10dp" />
+     <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="The International Acadamic Conference of Electrical The International Acadamic Ci=onference of Electrical The International Acadamic Ci=onference of Electrical The International Acadamic Ci=onference of Electrical"
+    		android:textSize="14dp"
+    		android:paddingBottom="10dp" />
+     
+     <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="More"
+    		android:textSize="14dp"
+    		android:textColor="@color/red"
+    		android:layout_gravity="right"/>
+ </LinearLayout>
+ <LinearLayout    	
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="10dp"
+    	android:layout_marginBottom="10dp"
+    	android:background="@drawable/box"
+    	>
+     <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Organiser"    		
+    		android:textColor="@color/blue"
+    		android:paddingBottom="10dp" />
+     <TextView
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Iraj Research Forum"
+    		android:textSize="14dp"
+    		android:paddingBottom="10dp" />
+     <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="More"
+    		android:textSize="14dp"
+    		/>
+     <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Bhubaneswar, India"
+    		android:textSize="14dp"	
+    		/>
+ </LinearLayout>
+ </LinearLayout>
+ </ScrollView>
+</RelativeLayout>

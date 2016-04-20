@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+   	 android:layout_height="match_parent"
+   	 android:background="#FFFFFF">   	 
+<TextView
+    	android:id="@+id/copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="© Copyright 10times.com All rights reserved. "
+        android:background="@drawable/copyright"
+        android:layout_alignParentBottom="true"
+        android:textSize="12dp"
+     />
+<ScrollView
+     android:layout_width="match_parent"
+   	 android:layout_height="match_parent"
+   	 android:layout_above ="@id/copyright">"
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="10times is the world&apos;s largest service provider for business events. We are using technology to change the way our millions of users discover and experience events. Spread across 10,000 cities, we are in the process of developing a cutting edge mobile technology in order to re-invent how this industry conducts business. Whether its a tradeshow or conference, we have it all on a single freakishly amazing platform!" />
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20,000+ Event Organizers"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:padding="7dp"
+        android:background="@drawable/aboutbox" />
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Over 1,30,000 Events "
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:padding="7dp"
+        android:background="@drawable/aboutbox" />
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:padding="7dp"
+        android:textSize="18dp"
+        android:text="2mn+ Visitor page views each month"
+        android:background="@drawable/aboutbox" />
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:padding="7dp"
+        android:textSize="18dp"
+        android:text="Spread across 140+ Countries"
+        android:background="@drawable/aboutbox" />
+	<LinearLayout
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="96dp"
+        android:layout_marginBottom="20dp">
+	    <ImageView
+	        android:layout_width="40dp"
+        	android:layout_height="20dp"
+        	android:src="@drawable/gp_about"
+        	/>
+		<TextView
+		    android:id="@+id/privacyPolicy"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text=" +75 Recommend this on google"
+	        android:textColor="#999999"	           
+	        />	
+        	
+	</LinearLayout>
+	<TextView
+	    android:id="@+id/privacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="http://10times.com/privacy-policy"        
+        android:clickable="true"
+        android:autoLink="all"        
+        />	
+        
+</LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
