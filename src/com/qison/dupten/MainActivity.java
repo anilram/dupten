@@ -113,9 +113,9 @@ public class MainActivity extends FragmentActivity implements
 			final String appPackageName = getPackageName(); // getPackageName() from Context or Activity object
 			Log.d("getPackageName", appPackageName);
 			try {
-			    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.flyplist")));
+			    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.fklkykpklkiksktk")));
 			} catch (android.content.ActivityNotFoundException anfe) {
-			    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + "com.flyplist")));
+			    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + "com.fklkykpklkiksktk")));
 			}
 			break;
 		case 7:
