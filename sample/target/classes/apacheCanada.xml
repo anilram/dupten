@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<padagreement>
+	<companylogo>
+		/home/anil.laxmisetti/EIPP/Workspace/July_workspace/FalconDev/Falcon_DEV/sample/src/main/resources/3M.png
+	</companylogo>
+	<paddetails>
+	<today_date>
+		@date
+	</today_date>
+	<account_customer_number>@accountCustomerNumber</account_customer_number>
+	<holder_name>@holderName</holder_name>
+	<customer_name>@customerName</customer_name>
+	<payer_number>@payerName</payer_number>
+	<address>@address</address>
+	<city>@city</city>
+	<province>@province</province>
+	<postal_code>@postalCode</postal_code>
+	<financial_institution>@financialInstitute</financial_institution>
+	<transit_number>@fiTransitNumber</transit_number>
+	<account_routing_number>@accountRoutingNumber</account_routing_number>
+	<financial_institution_number>@financialInstitutionNumber</financial_institution_number>
+	<type_of_service>@typeOfService</type_of_service>
+	<account_number>@maskedAccountNumber</account_number>
+	<payment_start_date>@paymentStartDate</payment_start_date>
+	<confirmation_period>@confirmationPeriod</confirmation_period>
+	<min_confirmation_period>@minConfirmationPeriod</min_confirmation_period>
+	</paddetails>
+</padagreement>
