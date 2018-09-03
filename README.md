@@ -1,2 +1,2 @@
 # dupten
-sample android frame work.
+sample android framework.
