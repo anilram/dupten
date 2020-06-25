@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.qison.dupten.CountryActivity" >
+    tools:context="com.ar.dupten.CountryActivity" >
 
 <!--     <item -->
 <!--         android:id="@+id/action_settings" -->

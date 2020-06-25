@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.qison.dupten.HomeActivity" >
+    tools:context="com.ar.dupten.HomeActivity" >
 
 <!--     <item -->
 <!--         android:id="@+id/action_settings" -->
