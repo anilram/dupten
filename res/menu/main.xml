@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.qison.dupten.MainActivity" >
+    tools:context="com.ar.dupten.MainActivity" >
 
     <item
         android:id="@+id/action_search"
